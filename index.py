@@ -1,20 +1,25 @@
 import json
 import os
+import sys
 
 with open('package_loranodes_index.json', 'r') as file:
     data = json.load(file)
 
 toInsert = {}
 
+if(len(sys.argv)<3):
+	print("Not enough arguments. Usage: index.py <version> <shasum>")
+	exit()
+
 # user input version number
-toInsert['version'] = input('file version? ')
+toInsert['version'] = sys.argv[1]
 
 toInsert['boards'] = []
 toInsert['boards'].append({'name': 'microNode'})
 
 toInsert['archiveFileName'] = 'microNode-' + toInsert['version'] + '.tar.bz2'
 
-toInsert['checksum'] = 'SHA-256:' + input('sha256 sum? ')
+toInsert['checksum'] = 'SHA-256:' + sys.argv[2]
 
 toInsert['url'] = 'https://github.com/loranodes/arduino-core/raw/' \
     + toInsert['version'] + '/' + toInsert['archiveFileName']
