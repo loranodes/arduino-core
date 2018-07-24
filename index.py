@@ -16,7 +16,7 @@ toInsert['archiveFileName'] = 'microNode-' + toInsert['version'] + '.tar.bz2'
 
 toInsert['checksum'] = 'SHA-256:' + input('sha256 sum? ')
 
-toInsert['url'] = 'https://github.com/loranodes/arduino-core/' \
+toInsert['url'] = 'https://github.com/loranodes/arduino-core/raw/' \
     + toInsert['version'] + '/' + toInsert['archiveFileName']
 
 cmd = toInsert['archiveFileName']
