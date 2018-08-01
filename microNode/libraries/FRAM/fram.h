@@ -15,7 +15,7 @@ void FRAMwriteblock(uint16_t startAddress, uint8_t data[], uint16_t length);
 
 uint8_t FRAMread(uint16_t address);
 
-void FRAMreadblock(uint16_t startAddress, uint16_t number, uint8_t buffer[]);
+void FRAMreadblock(uint16_t startAddress, uint8_t buffer[], uint16_t number);
 
 
 void FRAMpack(uint16_t address, void* data, uint8_t len);

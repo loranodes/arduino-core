@@ -42,7 +42,7 @@ uint8_t FRAMread(uint16_t address){
 }
 
 
-void FRAMreadblock(uint16_t startAddress, uint16_t number, uint8_t buffer[]){
+void FRAMreadblock(uint16_t startAddress, uint8_t buffer[], uint16_t number){
     Wire.beginTransmission(pageAddress(startAddress));
     Wire.write(wordAddress(startAddress));
     Wire.endTransmission(false);
