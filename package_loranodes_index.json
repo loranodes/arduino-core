@@ -352,6 +352,46 @@
 							"version": "4.0.0-atmel"
 						}
 					]
+				},
+				{
+					"version": "1.0.6",
+					"boards": [
+						{
+							"name": "microNode"
+						}
+					],
+					"archiveFileName": "microNode-1.0.6.tar.bz2",
+					"checksum": "SHA-256:22266056f02077a0afd2cf22b303537a1988c1e80917ad11dd648dab0244f080",
+					"url": "https://github.com/loranodes/arduino-core/raw/1.0.6/microNode-1.0.6.tar.bz2",
+					"size": 1182020,
+					"architecture": "samd",
+					"name": "LoRaNodes M0 Boards",
+					"category": "LoRaNodes",
+					"help": {
+						"online": "https://github.com/loranodes"
+					},
+					"toolsDependencies": [
+						{
+							"name": "arm-none-eabi-gcc",
+							"packager": "arduino",
+							"version": "4.8.3-2014q1"
+						},
+						{
+							"name": "bossac",
+							"packager": "arduino",
+							"version": "1.6.1-arduino"
+						},
+						{
+							"name": "openocd",
+							"packager": "arduino",
+							"version": "0.9.0-arduino"
+						},
+						{
+							"name": "CMSIS",
+							"packager": "arduino",
+							"version": "4.0.0-atmel"
+						}
+					]
 				}
 			]
 		}
