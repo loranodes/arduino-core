@@ -372,24 +372,34 @@
 					},
 					"toolsDependencies": [
 						{
-							"name": "arm-none-eabi-gcc",
 							"packager": "arduino",
+							"name": "arm-none-eabi-gcc",
 							"version": "4.8.3-2014q1"
 						},
 						{
+							"packager": "arduino",
 							"name": "bossac",
-							"packager": "arduino",
-							"version": "1.6.1-arduino"
+							"version": "1.7.0"
 						},
 						{
+							"packager": "arduino",
 							"name": "openocd",
-							"packager": "arduino",
-							"version": "0.9.0-arduino"
+							"version": "0.9.0-arduino6-static"
 						},
 						{
-							"name": "CMSIS",
 							"packager": "arduino",
-							"version": "4.0.0-atmel"
+							"name": "CMSIS",
+							"version": "4.5.0"
+						},
+						{
+							"packager": "arduino",
+							"name": "CMSIS-Atmel",
+							"version": "1.1.0"
+						},
+						{
+							"packager": "arduino",
+							"name": "arduinoOTA",
+							"version": "1.2.0"
 						}
 					]
 				}
