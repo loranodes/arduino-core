@@ -15,7 +15,7 @@ static void ACsync(){
 }
 
 #define LOWER_TH 10
-#define UPPER_TH 50
+#define UPPER_TH 40
 
 volatile uint32_t cycles = 0;
 
@@ -112,6 +112,7 @@ void init_AC(uint8_t outPin){
   ACsync();
   AC->INTFLAG.bit.COMP1=1;  //Reset int flags
 
+  delay(100);
   digitalWrite(pin, HIGH);
 }
 
