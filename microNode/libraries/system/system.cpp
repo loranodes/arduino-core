@@ -39,5 +39,5 @@ uint16_t readVCC(){
   uint32_t voltage = valueRead * 4 * 1000;
   voltage /= 4096;
 
-  return voltage;
+  return voltage * 4;
 }

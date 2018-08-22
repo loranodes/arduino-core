@@ -37,14 +37,19 @@ toInsert['help'] = {'online': 'https://github.com/loranodes'}
 toInsert['toolsDependencies'] = []
 
 tool1 = {"name": "arm-none-eabi-gcc", "packager": "arduino", "version": "4.8.3-2014q1"}
-tool2 = {"name": "bossac", "packager": "arduino", "version": "1.6.1-arduino"}
-tool3 = {"name": "openocd", "packager": "arduino", "version": "0.9.0-arduino"}
-tool4 = {"name": "CMSIS", "packager": "arduino", "version": "4.0.0-atmel"}
+tool2 = {"name": "bossac", "packager": "arduino", "version": "1.7.0"}
+tool3 = {"name": "openocd", "packager": "arduino", "version": "0.9.0-arduino6-static"}
+tool4 = {"name": "CMSIS", "packager": "arduino", "version": "4.5.0"}
+tool5 = {"name": "CMSIS-Atmel", "packager": "arduino", "version": "1.1.0"}
+tool6 = {"name": "arduinoOTA", "packager": "arduino", "version": "1.2.0"}
+
 
 toInsert['toolsDependencies'].append(tool1)
 toInsert['toolsDependencies'].append(tool2)
 toInsert['toolsDependencies'].append(tool3)
 toInsert['toolsDependencies'].append(tool4)
+toInsert['toolsDependencies'].append(tool5)
+toInsert['toolsDependencies'].append(tool6)
 
 
 data['packages'][0]['platforms'].append(toInsert)
